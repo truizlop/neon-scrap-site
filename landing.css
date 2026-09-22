@@ -1,0 +1,56 @@
+:root{color-scheme:light;--paper:#f6f0de;--ink:#17202c;--accent:#a72d36}
+*{box-sizing:border-box}
+html{color:var(--ink);background:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;scroll-padding-top:24px}
+body{margin:0}
+a{color:inherit;text-underline-offset:.24em;text-decoration-thickness:1px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+img{display:block;max-width:100%;height:auto}
+.skip{position:absolute;top:8px;left:16px;z-index:3;padding:12px;background:var(--paper);transform:translateY(-180%)}
+.skip:focus{transform:none}
+header{height:64px}
+nav{display:flex;align-items:center;gap:32px;height:100%;padding:0 3.5%}
+nav a{display:flex;align-items:center;min-height:44px;font-size:17px;text-decoration:none}
+nav .brand{margin-right:auto;font-weight:850;font-size:22px;letter-spacing:-.06em;font-style:italic}
+.cover{display:grid;grid-template-columns:52% 48%;min-height:720px;height:min(880px,calc(100svh - 64px));max-height:1080px}
+.cover-art{min-width:0;overflow:hidden}
+.cover-art img{width:100%;height:100%;object-fit:cover;object-position:50% 59%}
+.introduction{align-self:center;padding:40px 8.5% 48px}
+h1{margin:0 0 38px}
+h1 img{width:100%}
+.description{font-size:clamp(25px,2.2vw,36px);line-height:1.3;font-weight:550;letter-spacing:-.025em;margin:0 0 42px;max-width:560px}
+.availability{font-size:18px;line-height:1.5;margin:0 0 34px}
+.see-game{display:inline-flex;align-items:center;gap:18px;min-height:44px;font-size:20px;font-weight:600}
+.see-game svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter}
+.game-gallery{max-width:1180px;margin:0 auto;padding:88px 40px 60px}
+.gallery-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:26px}
+h2{font-size:32px;letter-spacing:-.035em;line-height:1.15;margin:0;font-weight:750}
+.gallery-heading p{font-size:14px;line-height:1.4;margin:0}
+.screens{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:860px;margin:auto}
+.screens img{width:100%;border:2px solid var(--ink)}
+.roster{display:block;margin:58px -16px 26px}
+.roster img{width:100%;height:auto}
+.purchase-copy{max-width:990px;margin:0 auto;font-size:22px;line-height:1.5;letter-spacing:-.015em}
+.purchase-copy p{margin:0 0 15px}
+.purchase-copy p+p{font-size:17px}
+footer{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1100px;margin:auto;padding:24px 0 30px;border-top:1px solid var(--ink);font-size:15px}
+footer div{display:flex;gap:30px}footer a{display:flex;align-items:center;min-height:44px}footer p{margin:0}
+@media(min-width:1700px){.cover{max-width:1700px;margin:auto}.introduction{padding-left:70px;padding-right:70px}}
+@media(max-width:900px){.cover{min-height:600px;height:720px}.introduction{padding:32px 9%}h1{margin-bottom:26px}.description{font-size:25px}.availability{font-size:16px}.game-gallery{padding:60px 28px 40px}footer{margin:0 28px}.screens{gap:22px}.gallery-heading{align-items:flex-start}}
+@media(max-width:600px){
+  header{height:60px}nav{padding:0 20px;gap:20px}nav a{font-size:15px}nav .brand{font-size:20px}
+  .cover{display:flex;flex-direction:column;height:auto;min-height:0;max-height:none}
+  .cover-art{height:52svh;max-height:480px;min-height:350px}
+  .cover-art img{object-position:50% 62%}
+  .introduction{width:100%;padding:38px 26px 50px}
+  h1{max-width:460px;margin:0 0 25px}
+  .description{font-size:25px;max-width:430px;margin-bottom:25px}
+  .availability{margin-bottom:20px;font-size:16px}
+  .see-game{font-size:18px}
+  .game-gallery{padding:30px 22px 35px}
+  .gallery-heading{display:block;margin-bottom:22px}h2{font-size:30px}.gallery-heading p{margin-top:12px;font-size:13px}
+  .screens{grid-template-columns:1fr;gap:25px;max-width:400px}
+  .roster{margin:35px -8px 25px}
+  .purchase-copy{font-size:20px;line-height:1.5}.purchase-copy p+p{font-size:16px}
+  footer{align-items:flex-start;flex-direction:column;gap:10px;margin:0 22px;padding:18px 0 28px;font-size:14px}
+}
