@@ -70,6 +70,23 @@ h2, h3 { font-family: var(--display); font-weight: 900; }
 .season-content { align-self: center; border-top: 3px solid var(--ink); padding-top: 24px; }
 .season-content h3 { font-size: 36px; line-height: 1.1; text-transform: uppercase; }
 .season-content .price { font-size: 15px; margin-top: 18px; }
+.season-content .purchase-terms { font-size: 15px; margin-top: 12px; }
+.season-catalog { margin-top: 52px; padding-top: 36px; border-top: 3px solid var(--ink); }
+.catalog-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 40px; }
+.catalog-heading h3 { font-size: 36px; line-height: 1.1; text-transform: uppercase; }
+.catalog-heading > p { max-width: 470px; font-size: 16px; line-height: 1.6; }
+.paid-rides, .paid-arenas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin-top: 30px; }
+.paid-rides figure { min-width: 0; text-align: center; }
+.ride-portrait { display: block; width: auto; max-width: 100%; height: 170px; overflow: hidden; margin: 0 auto 15px; }
+.season-catalog h4 { font-family: var(--display); font-size: 26px; font-weight: 900; line-height: 1.2; text-transform: uppercase; margin: 0; }
+.paid-rides figcaption p { margin-top: 8px; font-size: 15px; font-weight: 600; line-height: 1.5; }
+.paid-rides figcaption span { display: block; margin-top: 2px; font-size: 13px; font-weight: 400; }
+.weapon-note { margin-top: 28px; font-size: 14px; line-height: 1.6; text-align: center; }
+.arena-heading { margin-top: 46px; padding-top: 34px; border-top: 1px solid var(--ink); }
+.arena-preview { display: block; width: 100%; height: auto; aspect-ratio: 482 / 222; overflow: hidden; border: 2px solid var(--ink); margin-bottom: 16px; background: var(--ink); }
+.paid-arenas h4 { font-size: 23px; }
+.paid-arenas figcaption p { margin-top: 9px; font-size: 14px; line-height: 1.55; }
+.season-total { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--ink); font-size: 18px; line-height: 1.6; }
 .game-notes { margin-top: 44px; border-top: 1px solid var(--ink); padding-top: 24px; text-align: center; }
 .game-notes p { font-size: 16px; line-height: 1.6; font-weight: 600; }
 .game-notes .capture-note { margin-top: 9px; font-size: 13px; font-weight: 400; }
@@ -101,6 +118,12 @@ footer { color: var(--paper); background: var(--ink); }
   .garage-figure { max-width: 300px; }
   .control-row { padding-left: 73px; }
   .control-icon { width: 54px; height: 54px; }
+  .paid-rides, .paid-arenas { gap: 28px 24px; }
+  .ride-portrait { height: 140px; }
+  .catalog-heading { gap: 28px; }
+  .catalog-heading h3 { font-size: 30px; }
+  .catalog-heading > p { max-width: 350px; }
+  .paid-arenas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
   .page-width { width: calc(100% - 40px); }
@@ -136,6 +159,19 @@ footer { color: var(--paper); background: var(--ink); }
   .content-options p { font-size: 17px; margin-top: 18px; }
   .season-content { padding-top: 22px; }
   .season-content h3 { font-size: 30px; }
+  .season-catalog { margin-top: 32px; padding-top: 28px; }
+  .catalog-heading { display: block; }
+  .catalog-heading h3 { font-size: 30px; }
+  .catalog-heading > p { margin-top: 14px; max-width: 520px; }
+  .paid-rides { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 20px; margin-top: 26px; }
+  .ride-portrait { height: 140px; }
+  .season-catalog h4 { font-size: 24px; }
+  .paid-rides figcaption p { font-size: 14px; }
+  .weapon-note { text-align: left; }
+  .arena-heading { margin-top: 30px; padding-top: 28px; }
+  .paid-arenas { gap: 28px 20px; margin-top: 24px; }
+  .paid-arenas h4 { font-size: 23px; }
+  .season-total { margin-top: 28px; font-size: 17px; }
   .game-notes { text-align: left; margin-top: 30px; }
   .game-notes p { font-size: 15px; }
   .footer-content { gap: 12px 20px; padding-block: 20px; }
@@ -152,5 +188,9 @@ footer { color: var(--paper); background: var(--ink); }
   .control-row { padding-left: 63px; }
   .control-icon { width: 48px; height: 48px; }
   .free-content h2 { font-size: 40px; }
+  .ride-portrait { height: 125px; }
+  .paid-rides { column-gap: 14px; }
+  .season-catalog h4 { font-size: 22px; }
+  .paid-arenas { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .action { transition: none; } }
