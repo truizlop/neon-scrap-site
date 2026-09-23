@@ -10,8 +10,10 @@ To preview locally with the production project path, serve the parent directory 
 
 ## Visual direction
 
-The landing page leads with the original comic cover and shipping brush wordmark. Gameplay and garage images are actual native app captures, staged for marketing; they are not images generated for this website. The roster uses the game's original illustrations. Screenshots keep their native proportions. The mobile roster rearranges the ten measured atlas crops into two columns. WebP assets are self-hosted; there are no third-party scripts, fonts, trackers or build dependencies.
+The landing page pairs the shipping brush wordmark and a native duel with a short introduction to same-device play. A second native garage capture supports the controls and vehicle explanation. The final section separates the free content from the optional Season 1 purchase. The owner rejected the oversized cover illustration, detached vehicle lineup and overly sparse copy; keep useful text alongside relevant images.
 
-Keep the copy brief and factual. Avoid slogan triplets, generic numbered feature cards, fabricated testimonials, badge rows and decorative calls to action. The App Store message remains plain coming-soon text until the app is released. Support and privacy keep their detailed information on their own pages.
+Gameplay and garage images are actual native app captures staged for marketing, not images generated for this website. Screenshots keep their full native proportions. Layout concepts are design references only and must not replace the original screenshots. WebP assets are self-hosted; there are no third-party scripts, fonts, trackers or build dependencies.
 
-The September 2026 redesign was checked in the Codex browser at desktop and phone widths, including image loading/proportions, overflow, the gallery anchor, support and privacy navigation.
+Keep copy specific: explain the two controls, shared launch, pickups, wrapped edges and free/paid contents in short passages. Avoid slogan triplets, generic feature cards, fabricated testimonials and decorative calls to action. The App Store message remains coming-soon text until the app is released. Support and privacy keep their detailed information on their own pages.
+
+The September 23 revision uses cream, ink, coral and mint with condensed display headings, simple rules and an annotated game screenshot. It was checked in the Codex browser on desktop, tablet and narrow phones, including image proportions, overflow, section links, support/privacy navigation and keyboard access.

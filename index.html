@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Neon Scrap · Local two-player vehicle combat</title>
-  <meta name="description" content="Vehicle combat for two players sharing an iPhone or iPad. See Neon Scrap's comic vehicles and native gameplay. Coming soon to the App Store.">
+  <meta name="description" content="Put an iPhone or iPad between you and a friend. Neon Scrap is local two-player vehicle combat with two buttons each, comic scrapyards and a free starting roster.">
   <meta property="og:title" content="Neon Scrap">
-  <meta property="og:description" content="Vehicle combat for two players sharing an iPhone or iPad.">
+  <meta property="og:description" content="Pick a fight with the person opposite. Local two-player vehicle combat for iPhone and iPad.">
   <meta property="og:image" content="https://truizlop.github.io/neon-scrap-site/icon.png">
   <meta property="og:type" content="website">
   <link rel="icon" href="/neon-scrap-site/icon.png">
@@ -14,45 +14,93 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <nav aria-label="Main navigation">
-      <a class="brand" href="/neon-scrap-site/" aria-current="page">Neon Scrap</a>
-      <a href="/neon-scrap-site/support/">Support</a>
-      <a href="/neon-scrap-site/privacy/">Privacy</a>
+  <header class="site-header">
+    <nav class="page-width" aria-label="Main navigation">
+      <a class="brand" href="/neon-scrap-site/" aria-current="page">Neon <span>Scrap</span></a>
+      <div class="nav-links">
+        <a href="#how-to-play">How to play</a>
+        <a href="#season-1">Season 1</a>
+        <a href="/neon-scrap-site/support/">Support</a>
+      </div>
     </nav>
   </header>
-  <main id="main">
-    <section class="cover" aria-labelledby="game-title">
-      <div class="cover-art"><img src="/neon-scrap-site/assets/cover.webp" width="1024" height="1536" alt="Comic cover art of a teal junk tank and a coral hot rod bursting through rubble" fetchpriority="high"></div>
+  <main id="main" tabindex="-1">
+    <section class="hero page-width" aria-labelledby="game-title">
       <div class="introduction">
-        <h1 id="game-title"><img src="/neon-scrap-site/assets/wordmark.webp" width="598" height="210" alt="Neon Scrap"></h1>
-        <p class="description">Vehicle combat for two players sharing an iPhone or iPad.</p>
+        <h1 id="game-title"><img src="/neon-scrap-site/assets/wordmark.webp" width="598" height="210" alt="Neon Scrap" fetchpriority="high"></h1>
+        <h2 class="hero-heading">Pick a fight with<br class="desktop-break"> the person opposite.</h2>
+        <p class="hero-copy">Put an iPhone or iPad between you. Each player gets two buttons and a very breakable vehicle. Turn, fire, and chase each other around a comic-book scrapyard.</p>
+        <a class="action" href="#how-to-play">How to play <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 3v17m-6-6 6 6 6-6"/></svg></a>
         <p class="availability">Coming soon to the App Store</p>
-        <a class="see-game" href="#game">See the game <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3v17m-6-6 6 6 6-6"/></svg></a>
+      </div>
+      <figure class="duel-figure">
+        <div class="duel-stage">
+          <span class="player-label rival" aria-hidden="true">Your rival</span>
+          <img class="duel-screen" src="/neon-scrap-site/assets/duel.webp" width="900" height="1955" alt="A native Neon Scrap duel: a coral vehicle faces a teal tank, with each player's controls facing their end of the screen" fetchpriority="high">
+          <span class="player-label you" aria-hidden="true">You</span>
+        </div>
+        <figcaption>Both players share this screen.</figcaption>
+      </figure>
+    </section>
+    <section id="how-to-play" class="how-to-play" aria-labelledby="controls-title">
+      <div class="play-layout page-width">
+        <div class="play-copy">
+          <h2 id="controls-title">Two buttons are<br> all you get.</h2>
+          <p class="launch-copy">Choose your rides and an arena. Hold both Play buttons for three seconds to begin.</p>
+          <dl class="controls">
+            <div class="control-row">
+              <dt>
+                <svg class="control-icon turn" viewBox="0 0 72 72" aria-hidden="true"><path class="plate" d="M13 5 58 8 67 21 64 60 49 67 9 61 5 20Z"/><path class="glyph" d="M50 25a19 19 0 1 0 3 23M50 14v16H34"/></svg>
+                <span>Hold to turn</span>
+              </dt>
+              <dd>Hold the arrow to stop and turn. Release to drive forward. Each new press reverses your turning direction.</dd>
+            </div>
+            <div class="control-row">
+              <dt>
+                <svg class="control-icon fire" viewBox="0 0 72 72" aria-hidden="true"><path class="plate" d="M13 5 58 8 67 21 64 60 49 67 9 61 5 20Z"/><circle class="glyph" cx="36" cy="36" r="16"/><path class="glyph" d="M36 12v14m0 20v14M12 36h14m20 0h14"/></svg>
+                <span>Tap to fire</span>
+              </dt>
+              <dd>Aim with the whole vehicle. You start with three rounds, so collect ammo and swap weapons as you go.</dd>
+            </div>
+          </dl>
+          <div class="wrap-copy">
+            <h3>The edge is not an escape.</h3>
+            <p>Drive off one side and return on the other. Cover blocks shots; ammo, repair kits and new weapons keep the fight moving.</p>
+          </div>
+          <p class="tutorial-copy">Four playable lessons help you find your feet before a friend finds your weak spot.</p>
+        </div>
+        <figure class="garage-figure">
+          <img src="/neon-scrap-site/assets/garage.webp" width="900" height="1955" alt="The shared garage with Road Riot facing the upper player and Junk King facing the lower player, each with a starting weapon and painted vehicle stats" loading="lazy" decoding="async">
+          <figcaption><strong>Pick your ride.</strong> Every vehicle has its own starting weapon and speed, armor and firing-rate balance.</figcaption>
+        </figure>
       </div>
     </section>
-    <section id="game" class="game-gallery" aria-labelledby="gallery-title">
-      <div class="gallery-heading">
-        <h2 id="gallery-title">In the game</h2>
-        <p>Native app captures · staged scenes</p>
-      </div>
-      <div class="screens">
-        <img src="/neon-scrap-site/assets/duel.webp" width="900" height="1955" alt="Native gameplay: two vehicles fight in Skyline Scrap with opposite-facing controls, ammo and armor gauges" loading="lazy" decoding="async">
-        <img src="/neon-scrap-site/assets/garage.webp" width="900" height="1955" alt="Native garage: Junk King and Road Riot selected in the two mirrored vehicle pickers" loading="lazy" decoding="async">
-      </div>
-      <picture class="roster">
-        <source media="(max-width: 600px)" srcset="/neon-scrap-site/assets/roster-mobile.webp">
-        <img src="/neon-scrap-site/assets/roster.webp" width="1983" height="793" alt="The ten illustrated rides, including a tank, buggy, taxi, garbage truck, hot rod, beetle, bulldozer, sports car, ice cream van and jet car" loading="lazy" decoding="async">
-      </picture>
-      <div class="purchase-copy">
-        <p>Junk King, Road Riot and Skyline Scrap are free. Season 1 adds eight rides and four arenas for both players with a one-time purchase.</p>
-        <p>Every weapon pickup and the playable tutorial are included for free.</p>
+    <section id="season-1" class="free-and-season" aria-labelledby="free-title">
+      <div class="page-width">
+        <div class="content-options">
+          <div class="free-content">
+            <h2 id="free-title">Start with a<br> <span>free scrap.</span></h2>
+            <p>Junk King, Road Riot and Skyline Scrap are free for both players. Every weapon pickup and all four tutorial lessons are included.</p>
+          </div>
+          <div class="season-content">
+            <h3>Season 1</h3>
+            <p>Add eight more rides and four more arenas with one permanent purchase for both players.</p>
+            <p class="price">$4.99 USD · Local prices shown in the app</p>
+          </div>
+        </div>
+        <div class="game-notes">
+          <p>Local matches need no account or internet connection. No ads.</p>
+          <p class="capture-note">Screens shown are staged captures from the native app.</p>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div><a href="/neon-scrap-site/support/">Support</a><a href="/neon-scrap-site/privacy/">Privacy</a></div>
-    <p>© 2026 Tomás Ruiz López</p>
+    <div class="footer-content page-width">
+      <a class="brand" href="/neon-scrap-site/">Neon Scrap</a>
+      <div class="footer-links"><a href="/neon-scrap-site/support/">Support</a><a href="/neon-scrap-site/privacy/">Privacy</a></div>
+      <p>© 2026 Tomás Ruiz López</p>
+    </div>
   </footer>
 </body>
 </html>
